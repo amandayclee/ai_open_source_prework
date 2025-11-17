@@ -1,0 +1,18 @@
+/* Ensure the canvas occupies the full browser window without scrollbars */
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background: #000; /* fallback around the map if canvas larger than image */
+}
+
+#world-canvas {
+  display: block;      /* remove default inline gap */
+  width: 100vw;        /* fill viewport width */
+  height: 100vh;       /* fill viewport height */
+}
+
+
